@@ -10,3 +10,9 @@ trait Notifier {
 
     def clear()
 }
+
+trait AlarmNotifier {
+    this: Notifier =>
+    
+    def trigger(): String
+}
